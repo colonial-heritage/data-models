@@ -1,6 +1,6 @@
 # Provenance information: conceptual model
 
-Aim of the model: to track the events in which a cultural heritage object is created or discovered, transferred between owners or custodians, until it is lost, destroyed or in its present location. Heavily inspired by CIDOC-CRM and Linked Art.
+Aim of the model: to track the events in which a cultural heritage object is created or discovered, transferred between owners or custodians, until it is lost, destroyed or in its present location. The model uses [CIDOC-CRM](https://www.cidoc-crm.org/) as foundation.
 
 Status: draft
 

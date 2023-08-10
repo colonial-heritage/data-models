@@ -9,3 +9,5 @@ Status: work in progress
 1. Provenance information
     1. [Conceptual model](./provenance/conceptual.md)
     1. [RDF model](./provenance/rdf.md)
+2. User enrichments
+    1. [Conceptual model](./user-enrichments/conceptual.md)
