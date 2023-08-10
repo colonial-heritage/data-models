@@ -62,8 +62,14 @@ A 'term' is a description of an entity (e.g. person, location) or concept in a t
 
 ```mermaid
 graph LR
+  Object -- ID --> id7(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290)
+  Object -- Type --> Statue
+  Object -- Name --> ObjectPart_1
+  Object -- Materials --> ObjectPart_2
+  Object -- "Date of creation" --> ObjectPart_3
+
   Enrichment_1 -- ID --> id1(https://data.colonialcollections.nl/enrichments/1)
-  Enrichment_1 -- About --> Object_1
+  Enrichment_1 -- About --> ObjectPart_1
   Enrichment_1 -- Type --> Text
   Enrichment_1 -- Value --> value1(A comment about the object)
   Enrichment_1 -- "Text direction" --> ltr
@@ -74,7 +80,7 @@ graph LR
   Enrichment_1 -- License --> license1(https://creativecommons.org/licenses/by/4.0/)
 
   Enrichment_2 -- ID --> id2(https://data.colonialcollections.nl/enrichments/2)
-  Enrichment_2 -- About --> Object_2
+  Enrichment_2 -- About --> ObjectPart_2
   Enrichment_2 -- Type --> Term
   Enrichment_2 -- Value --> value2(http://vocab.getty.edu/aat/300011176)
   Enrichment_2 -- Source --> source2(See webpage http://example.org/2)
@@ -82,30 +88,24 @@ graph LR
   Enrichment_2 -- License --> license2(https://creativecommons.org/licenses/by/4.0/)
 
   Enrichment_3 -- ID --> id3(https://data.colonialcollections.nl/enrichments/3)
-  Enrichment_3 -- About --> Object_3
+  Enrichment_3 -- About --> ObjectPart_3
   Enrichment_3 -- Type --> Date
   Enrichment_3 -- Value --> value3(1901?)
   Enrichment_3 -- Source --> source3(See webpage http://example.org/3)
   Enrichment_3 -- Creator --> User_1
   Enrichment_3 -- License --> license3(https://creativecommons.org/licenses/by/4.0/)
 
-  Object_1 -- ID --> id4(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290#title)
-  Object_1 -- Type --> Title
-  Object_1 -- Value --> title1(Fragment van een figuur)
+  ObjectPart_1 -- ID --> id4(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290#title)
+  ObjectPart_1 -- Type --> Title
+  ObjectPart_1 -- Value --> title1(Fragment van een figuur)
 
-  Object_2 -- ID --> id5(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290#materials)
-  Object_2 -- Type --> Materials
-  Object_2 -- Value --> value4(http://vocab.getty.edu/aat/300011459)
+  ObjectPart_2 -- ID --> id5(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290#materials)
+  ObjectPart_2 -- Type --> Materials
+  ObjectPart_2 -- Value --> value4(http://vocab.getty.edu/aat/300011459)
 
-  Object_3 -- ID --> id6(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290#date-creation)
-  Object_3 -- Type --> type1(Date of creation)
-  Object_3 -- Value --> date(1905)
-
-  Object_X -- ID --> id7(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290)
-  Object_X -- Type --> Statue
-  Object_X -- Name --> Object_1
-  Object_X -- Materials --> Object_2
-  Object_X -- "Date of creation" --> Object_3
+  ObjectPart_3 -- ID --> id6(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290#date-creation)
+  ObjectPart_3 -- Type --> type1(Date of creation)
+  ObjectPart_3 -- Value --> date(1905)
 
   User_1 -- ID --> id8(https://data.colonialcollections.nl/users/2)
   User_1 -- Type --> Person
