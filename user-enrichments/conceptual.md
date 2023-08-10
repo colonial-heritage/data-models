@@ -53,7 +53,7 @@ A 'term' is a description of an entity (e.g. person, location) or concept in a t
 |Type|1|Type of enrichment|`Date`|
 |Value|1|Content of the enrichment: a date according to [EDTF](https://www.loc.gov/standards/datetime/)|`1901`, `1901?`, `1900/1905`|
 |Source|0 or more|Statement(s) about the source(s) the creator used when creating this enrichment, e.g. URLs of websites, book titles|`See webpage http://example.org/3`|
-|About|1|Identifier of the information the enrichment is about|`https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290#production`|
+|About|1|Identifier of the information the enrichment is about|`https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290#date-creation`|
 |Creator|1|Identifier of the user who created the enrichment|`https://data.colonialcollections.nl/users/2`|
 |Date created|1|Date on which the enrichment was created, in UTC|`2023-08-10T12:17:28`|
 |License|1|Identifier of the license of the enrichment|`https://creativecommons.org/licenses/by/4.0/`|
@@ -91,21 +91,21 @@ graph LR
 
   Object_1 -- ID --> id4(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290#title)
   Object_1 -- Type --> Title
-  Object_1 -- Value --> name1(Fragment van een figuur)
+  Object_1 -- Value --> title1(Fragment van een figuur)
 
   Object_2 -- ID --> id5(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290#materials)
   Object_2 -- Type --> Materials
   Object_2 -- Value --> value4(http://vocab.getty.edu/aat/300011459)
 
-  Object_3 -- ID --> id6(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290#production)
-  Object_4 -- Type --> Production
-  Object_4 -- "Date start" --> date(1905)
+  Object_3 -- ID --> id6(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290#date-creation)
+  Object_3 -- Type --> type1(Date of creation)
+  Object_3 -- Value --> date(1905)
 
   Object_X -- ID --> id7(https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290)
   Object_X -- Type --> Statue
   Object_X -- Name --> Object_1
   Object_X -- Materials --> Object_2
-  Object_X -- Production --> Object_3
+  Object_X -- "Date of creation" --> Object_3
 
   User_1 -- ID --> id8(https://data.colonialcollections.nl/users/2)
   User_1 -- Type --> Person
