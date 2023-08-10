@@ -25,7 +25,7 @@ Status: draft
 |Language|0 or 1|Language code of the text, according to ISO 639-1|`en-gb`|
 |About|1|Identifier of the entity the enrichment is about|`https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290`|
 |Creator|1|Identifier of the user who created the enrichment|`https://data.colonialcollections.nl/users/2`|
-|Date created|1|Date on which the enrichment was created|`2023-08-10T12:17:28`|
+|Date created|1|Date on which the enrichment was created, in UTC|`2023-08-10T12:17:28`|
 |License|1|Identifier of the license of the enrichment|`https://creativecommons.org/licenses/by/4.0/`|
 
 ### Term
@@ -39,7 +39,7 @@ A 'term' is a description of an entity (e.g. person, location) or concept in a t
 |Value|1 or more?|Term|`http://vocab.getty.edu/aat/300312200`|
 |About|1|Identifier of the entity the enrichment is about|`https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290`|
 |Creator|1|Identifier of the user who created the enrichment|`https://data.colonialcollections.nl/users/2`|
-|Date created|1|Date on which the enrichment was created|`2023-08-10T12:17:28`|
+|Date created|1|Date on which the enrichment was created, in UTC|`2023-08-10T12:17:28`|
 |License|1|Identifier of the license of the enrichment|`https://creativecommons.org/licenses/by/4.0/`|
 
 ### Date
@@ -51,13 +51,13 @@ A 'term' is a description of an entity (e.g. person, location) or concept in a t
 |Value|1|Date, according to [EDTF](https://www.loc.gov/standards/datetime/)|`1901`, `1901?`, `1900/1905`|
 |About|1|Identifier of the entity the enrichment is about|`https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290`|
 |Creator|1|Identifier of the user who created the enrichment|`https://data.colonialcollections.nl/users/2`|
-|Date created|1|Date on which the enrichment was created|`2023-08-10T12:17:28`|
+|Date created|1|Date on which the enrichment was created, in UTC|`2023-08-10T12:17:28`|
 |License|1|Identifier of the license of the enrichment|`https://creativecommons.org/licenses/by/4.0/`|
 
 ## Example
 
 ```mermaid
-graph TD
+graph LR
   Enrichment_1 -- About --> id1(https://data.colonialcollections.nl/enrichments/1)
   Enrichment_1 -- About --> Object_X
   Enrichment_1 -- Type --> Text
