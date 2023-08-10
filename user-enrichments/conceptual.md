@@ -20,7 +20,7 @@ Status: draft
 |-|-|-|-|
 |ID|1|Identifier of the enrichment|`https://data.colonialcollections.nl/enrichments/1`|
 |Type|1|Type of enrichment|`Text`|
-|Value|1|Content of the enrichment: a text|`A comment about the object`|
+|Value|1|Content of the enrichment: a text|`A comment about the title`|
 |Text direction|1|Direction of the text|`ltr`, `rtl`|
 |Format|1|Format code of the text, according to the IANA media types|`text/plain`|
 |Language|0 or 1|Language code of the text, according to ISO 639-1|`en-gb`|
@@ -71,7 +71,7 @@ graph LR
   Enrichment_1 -- ID --> id1(https://data.colonialcollections.nl/enrichments/1)
   Enrichment_1 -- About --> ObjectPart_1
   Enrichment_1 -- Type --> Text
-  Enrichment_1 -- Value --> value1(A comment about the object)
+  Enrichment_1 -- Value --> value1(A comment about the title)
   Enrichment_1 -- "Text direction" --> ltr
   Enrichment_1 -- Format --> format1(text/plain)
   Enrichment_1 -- Language --> lang1(en-gb)
