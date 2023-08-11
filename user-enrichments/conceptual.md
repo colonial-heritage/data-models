@@ -2,7 +2,9 @@
 
 Aim of the model: to capture enrichments of users. An 'enrichment' (also known as an 'annotation') is additional information about an entity, e.g. a cultural heritage object or a person.
 
-Status: draft
+## Status
+
+Draft
 
 ## Design principles
 

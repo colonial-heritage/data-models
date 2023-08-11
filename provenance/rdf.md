@@ -2,7 +2,9 @@
 
 The model is a translation of the [conceptual model](./conceptual.md) to RDF. The model uses [Linked Art](https://linked.art/model/provenance/) as foundation.
 
-Status: draft
+## Status
+
+Draft
 
 ## Example
 
