@@ -8,8 +8,8 @@ Draft
 
 ## Design principles
 
-1. An enrichment is about specific information from a data provider, e.g. about the 'title' or the 'materials' of a cultural heritage object. An enrichment is not about the object as a whole
-1. Apart from (1), an enrichment can be anything. For example: a translation, a comment, a new date, a new term
+1. An enrichment can be anything. For example: it could be a comment about a heritage object as a whole or a translation of a specific attribute (e.g. the title)
+1. The content of an enrichment is intentionally undefined/uncategorized. For example: it could be a question or a truth claim
 1. An enrichment is created by a specific user. This user is the owner of and responsible for the enrichment
 1. An enrichment has a specific license, to make clear what others are allowed to do with it
 1. An enrichment is never a deletion of original information, but it can be a correction; the provider of the original information can then decide what to do with it
