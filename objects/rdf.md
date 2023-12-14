@@ -167,12 +167,12 @@ Draft
     crm:P190_has_symbolic_content "Maecenas commodo est neque" .
 
 ####################
-# Creator
+# Creator / Maker
 ####################
 
 # MD5 of original IRI of object + 'creator' + sequence number
 <https://n2t.net/ark:/27023/17c8d9e5e5275425714135a56ef7cbbd>
-    a crm:E21_Person ;
+    a crm:E21_Person ; # Or crm:E74_Group
     rdfs:label "Vincent van Gogh" .
 
 ####################
