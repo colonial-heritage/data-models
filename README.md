@@ -6,8 +6,10 @@ Status: work in progress
 
 ## Contents
 
+1. Objects
+    1. [RDF model](./objects/rdf.md)
 1. Provenance information
     1. [Conceptual model](./provenance/conceptual.md)
     1. [RDF model](./provenance/rdf.md)
-2. User enrichments
+1. User enrichments
     1. [Conceptual model](./user-enrichments/conceptual.md)

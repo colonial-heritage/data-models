@@ -14,13 +14,6 @@ Draft
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://data.museum.nl/object/1234>
-    a crm:E22_Human-Made_Object ;
-    crm:P1_is_identified_by [
-        a crm:E33_E41_Linguistic_Appellation ;
-        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ;
-        crm:P190_has_symbolic_content "Fragment van een figuur" ;
-    ] ;
-    crm:P52_has_current_owner <https://museum.nl/> ;
     crm:P24i_changed_ownership_through <https://data.museum.nl/object/1234/provenance/event/1/activity/1> ,
                                        <https://data.museum.nl/object/1234/provenance/event/2/activity/1> ;
     crm:P30i_custody_transferred_through <https://data.museum.nl/object/1234/provenance/event/3/activity/1> ,
