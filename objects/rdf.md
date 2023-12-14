@@ -25,25 +25,25 @@ Draft
     a crm:E22_Human-Made_Object ;
 
     ####################
-    # Types
+    # Types. Note: currently not in the data of the data providers
     ####################
 
     crm:P2_has_type <http://vocab.getty.edu/aat/300033618> ; # Paintings
 
     ####################
-    # Materials
+    # Materials. Note: currently these are blank nodes with rdfs:labels
     ####################
 
     crm:P45_consists_of <http://vocab.getty.edu/aat/300015050> ; # Oil paint
 
     ####################
-    # Subjects
+    # Subjects. Note: currently not in the data of the data providers
     ####################
 
     crm:P62_depicts <http://vocab.getty.edu/aat/300152441> ; # Celebrations
 
     ####################
-    # Owners
+    # Owners. Note: currently not in the data of the data providers
     ####################
 
     crm:P52_has_current_owner <https://dataprovider.nl/> ;
@@ -198,16 +198,6 @@ Draft
     crm:P7_took_place_at <https://sws.geonames.org/3382998/> . # Suriname
 
 ####################
-# Digital object
-####################
-
-# MD5 of original IRI of object + 'digitalobject'+ sequence number
-<https://n2t.net/ark:/27023/02656bc2fee98af173d11607e8861ee4>
-    a dig:D1_Digital_Object ;
-    crm:P2_has_type <http://vocab.getty.edu/aat/300215302> ; # Digital image
-    la:access_point <http://images.memorix.nl/rce/thumb/1600x1600/e0164095-6a2d-b448-cc59-3a8ab2fafed7.jpg> .
-
-####################
 # Right of digital object
 ####################
 
@@ -228,15 +218,25 @@ Draft
     crm:P72_has_language <http://vocab.getty.edu/aat/300388277> . # English
 
 ####################
+# Digital object
+####################
+
+# MD5 of original IRI of object + 'digitalobject'+ sequence number
+<https://n2t.net/ark:/27023/02656bc2fee98af173d11607e8861ee4>
+    a dig:D1_Digital_Object ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300215302> ; # Digital image
+    la:access_point <http://images.memorix.nl/rce/thumb/1600x1600/e0164095-6a2d-b448-cc59-3a8ab2fafed7.jpg> ;
+    crm:P104_is_subject_to <https://n2t.net/ark:/27023/a663867ce99ac68a054618926e0a606c> ;
+    crm:P67i_is_referred_to_by <https://n2t.net/ark:/27023/a663867ce99ac68a054618926e0a606c> .
+
+####################
 # Visual item
 ####################
 
 # MD5 of original IRI of object + 'visualitem' + sequence number
 <https://n2t.net/ark:/27023/c085970357b8c90b719486d0fdf5e472>
     a crm:E36_Visual_Item ;
-    la:digitally_shown_by <https://n2t.net/ark:/27023/02656bc2fee98af173d11607e8861ee4> ;
-    crm:P104_is_subject_to <https://n2t.net/ark:/27023/a663867ce99ac68a054618926e0a606c> ;
-    crm:P67i_is_referred_to_by <https://n2t.net/ark:/27023/a663867ce99ac68a054618926e0a606c> .
+    la:digitally_shown_by <https://n2t.net/ark:/27023/02656bc2fee98af173d11607e8861ee4> .
 
 ####################
 # Dataset
