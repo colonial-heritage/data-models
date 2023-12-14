@@ -211,7 +211,7 @@ Draft
 # Right of digital object
 ####################
 
-# MD5 of original IRI of object + 'digitalobjectrights'+ sequence number
+# MD5 of original IRI of object + 'digitalobjectright'+ sequence number
 <https://n2t.net/ark:/27023/a663867ce99ac68a054618926e0a606c>
     a crm:E30_Right ;
     crm:P2_has_type <https://creativecommons.org/licenses/by/1.0/> .
@@ -244,6 +244,14 @@ Draft
 
 # MD5 of original IRI of dataset
 <https://n2t.net/ark:/27023/bb31a8ed445e5800a192eded125d7cdb>
-    a schema:Dataset ;
-    prov:wasDerivedFrom <https://dataprovider.nl/dataset1> . # Link to original dataset of the data provider
+    a schema:Dataset, prov:Entity ;
+    prov:wasDerivedFrom <https://dataprovider.nl/dataset1> ; # Link to original dataset of the data provider
+    prov:wasGeneratedBy [
+        a prov:Activity ;
+        prov:endedAtTime "2023-12-14T00:00:00-04:00"^^xsd:dateTime ;
+    ] ;
+    prov:wasAssociatedWith [
+        a prov:SoftwareAgent ;
+        rdfs:label "ETL";
+    ] .
 ```
