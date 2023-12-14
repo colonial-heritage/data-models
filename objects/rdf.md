@@ -1,6 +1,6 @@
 # Cultural Heritage Objects: RDF model
 
-The model uses [Linked Art](https://linked.art/) as foundation.
+The model uses [Linked Art](https://linked.art/model/object/) as foundation.
 
 ## Status
 
