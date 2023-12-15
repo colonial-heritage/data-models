@@ -201,7 +201,7 @@ Draft
 # Right of digital object
 ####################
 
-# MD5 of original IRI of object + 'digitalobjectright'+ sequence number
+# MD5 of original IRI of object + 'digitalobjectright' + sequence number
 <https://n2t.net/ark:/27023/a663867ce99ac68a054618926e0a606c>
     a crm:E30_Right ;
     crm:P2_has_type <https://creativecommons.org/licenses/by/1.0/> .
@@ -221,7 +221,7 @@ Draft
 # Digital object
 ####################
 
-# MD5 of original IRI of object + 'digitalobject'+ sequence number
+# MD5 of original IRI of object + 'digitalobject' + sequence number
 <https://n2t.net/ark:/27023/02656bc2fee98af173d11607e8861ee4>
     a dig:D1_Digital_Object ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300215302> ; # Digital image
@@ -252,6 +252,6 @@ Draft
     ] ;
     prov:wasAssociatedWith [
         a prov:SoftwareAgent ;
-        rdfs:label "ETL";
+        rdfs:label "ETL" ;
     ] .
 ```
