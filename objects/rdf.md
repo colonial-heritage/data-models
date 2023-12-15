@@ -211,7 +211,7 @@ Draft
 ####################
 
 # MD5 of original IRI of object + 'digitalobjectstatement' + sequence number
-<https://n2t.net/ark:/27023/a663867ce99ac68a054618926e0a606c>
+<https://n2t.net/ark:/27023/b7536d1d2705aee5181044380a802e64>
     a crm:E33_Linguistic_Object ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300435434> ; # 'A formal statement of the copyright or licensing of a work, and/or any restrictions placed on it.'
     crm:P190_has_symbolic_content "Some statement" ;
@@ -227,7 +227,7 @@ Draft
     crm:P2_has_type <http://vocab.getty.edu/aat/300215302> ; # Digital image
     la:access_point <http://images.memorix.nl/rce/thumb/1600x1600/e0164095-6a2d-b448-cc59-3a8ab2fafed7.jpg> ;
     crm:P104_is_subject_to <https://n2t.net/ark:/27023/a663867ce99ac68a054618926e0a606c> ;
-    crm:P67i_is_referred_to_by <https://n2t.net/ark:/27023/a663867ce99ac68a054618926e0a606c> .
+    crm:P67i_is_referred_to_by <https://n2t.net/ark:/27023/b7536d1d2705aee5181044380a802e64> .
 
 ####################
 # Visual item
