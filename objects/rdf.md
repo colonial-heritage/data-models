@@ -119,6 +119,7 @@ Draft
 # MD5 of original IRI of object + 'name' + sequence number
 <https://n2t.net/ark:/27023/d0c910b09e220797e726b9cce0484626>
     a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Object 1" ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
     crm:P190_has_symbolic_content "Object 1" ;
     crm:P72_has_language <http://vocab.getty.edu/aat/300388277> . # English
