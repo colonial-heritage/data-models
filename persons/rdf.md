@@ -107,7 +107,7 @@ Draft
 
 # MD5 of original IRI of person + 'placebirth'
 <https://n2t.net/ark:/27023/926cae587514cfd9d018a7d8927ad763>
-    a crm:E53_Place;
+    a crm:E53_Place ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City (if known from the data)
     crm:P1_is_identified_by <https://n2t.net/ark:/27023/1c1b9961929734fd4cd82639088b1675> .
 
@@ -148,7 +148,7 @@ Draft
 
 # MD5 of original IRI of person + 'placedeath'
 <https://n2t.net/ark:/27023/b6312be7015e62fb78dedac685cbaceb>
-    a crm:E53_Place;
+    a crm:E53_Place ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City (if known from the data)
     crm:P1_is_identified_by <https://n2t.net/ark:/27023/ba95f880264e35db39fbcd71dbb9a528> .
 
