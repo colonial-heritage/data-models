@@ -57,7 +57,29 @@ Draft
     a crm:E33_E41_Linguistic_Appellation ;
     rdfs:label "John Doe" ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
-    crm:P190_has_symbolic_content "John Doe" .
+    crm:P190_has_symbolic_content "John Doe" ;
+    crm:P106_is_composed_of <https://n2t.net/ark:/27023/a701e6283687b85d1712f72dc574c674> ,
+                            <https://n2t.net/ark:/27023/4ae762de09e312f3fa26771676659514> .
+
+####################
+# First name
+####################
+
+# MD5 of original IRI of person + 'firstname'
+<https://n2t.net/ark:/27023/a701e6283687b85d1712f72dc574c674>
+    a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content "John" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404651> .
+
+####################
+# Last name
+####################
+
+# MD5 of original IRI of person + 'lastname'
+<https://n2t.net/ark:/27023/4ae762de09e312f3fa26771676659514>
+    a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content "Doe" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404652> .
 
 ####################
 # Birth

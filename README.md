@@ -8,6 +8,8 @@ Status: work in progress
 
 1. Objects
     1. [RDF model](./objects/rdf.md)
+1. Persons
+    1. [RDF model](./persons/rdf.md)
 1. Provenance information
     1. [Conceptual model](./provenance/conceptual.md)
     1. [RDF model](./provenance/rdf.md)
