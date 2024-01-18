@@ -6,6 +6,8 @@ Aim of the model: to track the events in which a cultural heritage object is cre
 
 Draft
 
+TODO: add information about the thesauri that must be used for certain properties.
+
 ## Entities
 
 ### Cultural Heritage Object (CHO)
