@@ -154,7 +154,6 @@ graph LR
   User_1 -- Type --> Person
 ```
 
-## To be discussed
+## TBD
 
 1. Do we need more enrichment types? For example: is there a need to have a separate type for 'Dimensions'? Or are these of type 'text'?
-1. Is a 'Like' also a type of enrichment?
