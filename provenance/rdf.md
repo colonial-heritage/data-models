@@ -17,8 +17,7 @@ Draft
     crm:P24i_changed_ownership_through <https://data.museum.nl/object/1234/provenance/event/1/activity/1> ,
                                        <https://data.museum.nl/object/1234/provenance/event/2/activity/1> ;
     crm:P30i_custody_transferred_through <https://data.museum.nl/object/1234/provenance/event/3/activity/1> ,
-                                         <https://data.museum.nl/object/1234/provenance/event/4/activity/1> ;
-.
+                                         <https://data.museum.nl/object/1234/provenance/event/4/activity/1> .
 
 <https://data.museum.nl/object/1234/provenance/event/1/activity/1>
     a crm:E8_Acquisition ;
@@ -27,13 +26,6 @@ Draft
     crm:P24_transferred_title_of <https://data.museum.nl/object/1234> ;
     crm:P23_transferred_title_from <https://data.museum.nl/person/1> ; # Seller
     crm:P22_transferred_title_to <https://data.museum.nl/person/2> ; # Buyer
-    crm:P9i_forms_part_of <https://data.museum.nl/object/1234/provenance/event/1> ;
-.
-
-<https://data.museum.nl/object/1234/provenance/event/1>
-    a crm:E7_Activity ;
-    rdfs:label "Purchase of object" ;
-    crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
     crm:P4_has_time-span [
         a crm:E52_Time-Span ;
         rdfs:label "Provenance Activity Timespan" ;
@@ -46,9 +38,14 @@ Draft
         crm:P190_has_symbolic_content "Bought for 1500 US dollars" ;
         crm:P2_has_type <http://vocab.getty.edu/aat/300444174> ; # "Provenance statement"
     ] ;
+    crm:P9i_forms_part_of <https://data.museum.nl/object/1234/provenance/event/1> .
+
+<https://data.museum.nl/object/1234/provenance/event/1>
+    a crm:E7_Activity ;
+    rdfs:label "Purchase of object" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
     crm:P9_consists_of <https://data.museum.nl/object/1234/provenance/event/1/activity/1> ;
-    crm:P183_ends_before_the_start_of <https://data.museum.nl/object/1234/provenance/event/2> ;
-.
+    crm:P183_ends_before_the_start_of <https://data.museum.nl/object/1234/provenance/event/2> .
 
 <https://data.museum.nl/object/1234/provenance/event/2/activity/1>
     a crm:E8_Acquisition ;
@@ -57,13 +54,6 @@ Draft
     crm:P24_transferred_title_of <https://data.museum.nl/object/1234> ;
     crm:P23_transferred_title_from <https://data.museum.nl/person/2> ; # Seller
     crm:P22_transferred_title_to <https://museum.nl> ; # Buyer
-    crm:P9i_forms_part_of <https://data.museum.nl/object/1234/provenance/event/2> ;
-.
-
-<https://data.museum.nl/object/1234/provenance/event/2/activity/1>
-    a crm:E7_Activity ;
-    rdfs:label "Purchase of object" ;
-    crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
     crm:P4_has_time-span [
         a crm:E52_Time-Span ;
         rdfs:label "Provenance Activity Timespan" ;
@@ -76,10 +66,15 @@ Draft
         crm:P190_has_symbolic_content "Bought at an auction" ;
         crm:P2_has_type <http://vocab.getty.edu/aat/300444174> ; # "Provenance statement"
     ] ;
+    crm:P9i_forms_part_of <https://data.museum.nl/object/1234/provenance/event/2> .
+
+<https://data.museum.nl/object/1234/provenance/event/2/activity/1>
+    a crm:E7_Activity ;
+    rdfs:label "Purchase of object" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
     crm:P9_consists_of <https://data.museum.nl/object/1234/provenance/event/2/activity/1> ;
     crm:P183i_starts_after_the_end_of <https://data.museum.nl/object/1234/provenance/event/1> ;
-    crm:P183_ends_before_the_start_of <https://data.museum.nl/object/1234/provenance/event/3> ;
-.
+    crm:P183_ends_before_the_start_of <https://data.museum.nl/object/1234/provenance/event/3> .
 
 <https://data.museum.nl/object/1234/provenance/event/3/activity/1>
     a crm:E10_Transfer_of_Custody ;
@@ -87,13 +82,6 @@ Draft
     crm:P2_has_type <http://vocab.getty.edu/aat/300055292> ; # "Theft"
     crm:P30_transferred_custody_of <https://data.museum.nl/object/1234> ;
     crm:P28_custody_surrendered_by <https://museum.nl/> ; # Owner
-    crm:P9i_forms_part_of <https://data.museum.nl/object/1234/provenance/event/3> ;
-.
-
-<https://data.museum.nl/object/1234/provenance/event/3>
-    a crm:E7_Activity ;
-    rdfs:label "Theft of object" ;
-    crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
     crm:P4_has_time-span [
         a crm:E52_Time-Span ;
         rdfs:label "Provenance Activity Timespan" ;
@@ -106,10 +94,15 @@ Draft
         crm:P190_has_symbolic_content "Illegally obtained" ;
         crm:P2_has_type <http://vocab.getty.edu/aat/300444174> ; # "Provenance statement"
     ] ;
+    crm:P9i_forms_part_of <https://data.museum.nl/object/1234/provenance/event/3> .
+
+<https://data.museum.nl/object/1234/provenance/event/3>
+    a crm:E7_Activity ;
+    rdfs:label "Theft of object" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
     crm:P9_consists_of <https://data.museum.nl/object/1234/provenance/event/3/activity/1> ;
     crm:P183i_starts_after_the_end_of <https://data.museum.nl/object/1234/provenance/event/2> ;
-    crm:P183_ends_before_the_start_of <https://data.museum.nl/object/1234/provenance/event/4> ;
-.
+    crm:P183_ends_before_the_start_of <https://data.museum.nl/object/1234/provenance/event/4> .
 
 <https://data.museum.nl/object/1234/provenance/event/4/activity/1>
     a crm:E10_Transfer_of_Custody ;
@@ -117,13 +110,6 @@ Draft
     crm:P2_has_type <http://vocab.getty.edu/aat/300445014> ; # "Returning"
     crm:P30_transferred_custody_of <https://data.museum.nl/object/1234> ;
     crm:P29_custody_received_by <https://museum.nl/> ; # Owner
-    crm:P9i_forms_part_of <https://data.museum.nl/object/1234/provenance/event/4> ;
-.
-
-<https://data.museum.nl/object/1234/provenance/event/4>
-    a crm:E7_Activity ;
-    rdfs:label "Return of object" ;
-    crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
     crm:P4_has_time-span [
         a crm:E52_Time-Span ;
         rdfs:label "Provenance Activity Timespan" ;
@@ -136,7 +122,12 @@ Draft
         crm:P190_has_symbolic_content "Found in a basement" ;
         crm:P2_has_type <http://vocab.getty.edu/aat/300444174> ; # "Provenance statement"
     ] ;
+    crm:P9i_forms_part_of <https://data.museum.nl/object/1234/provenance/event/4> .
+
+<https://data.museum.nl/object/1234/provenance/event/4>
+    a crm:E7_Activity ;
+    rdfs:label "Return of object" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
     crm:P9_consists_of <https://data.museum.nl/object/1234/provenance/event/4/activity/1> ;
-    crm:P183i_starts_after_the_end_of <https://data.museum.nl/object/1234/provenance/event/3> ;
-.
+    crm:P183i_starts_after_the_end_of <https://data.museum.nl/object/1234/provenance/event/3> .
 ```

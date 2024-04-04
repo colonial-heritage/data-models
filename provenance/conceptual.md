@@ -1,4 +1,4 @@
-# Provenance information: conceptual model
+# Provenance events: conceptual model
 
 Aim of the model: to track the events in which a cultural heritage object is created or discovered, transferred between owners or custodians, until it is lost, destroyed or in its present location. The model uses [CIDOC-CRM](https://www.cidoc-crm.org/) as foundation.
 
@@ -9,19 +9,6 @@ Draft
 TODO: add information about the thesauri that must be used for certain properties.
 
 ## Entities
-
-### Cultural Heritage Object (CHO)
-
-Baseline: the Object ID standard
-
-|Name|Cardinality|Description|Example|
-|-|-|-|-|
-|ID|1|Identifier of the object|`https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/13290`|
-|Type|1 or more|Type of the object|`Statue`|
-|Name|0 or 1|Name of the object|`Fragment van een figuur`|
-|Description|0 or 1|Name of the object|`Staande figuur, mogelijk een figuur met dwerggroei voorstellend. Fragment afkomstig van kleine figurines uit graven.`|
-|Creator|0 or more|The agent who created the object|`Volk van Teotihuacan`|
-|Transfer of ownership or custody|0 or more|References to provenance events|`https://linkeddata.cultureelerfgoed.nl/colonialheritage/colonialobjects/id/123`|
 
 ### Provenance Event
 
@@ -42,7 +29,8 @@ Baseline: the Object ID standard
 |Ends before|0 or 1|Reference to another provenance event, later in time|-|
 |Related to|0 or more|Reference to an event to which the provenance event is (somehow) related|`http://www.wikidata.org/entity/Q2201391` ("Dutch intervention in Lombok and Karangasem")|
 
-TBD:
+## TBD
+
 1. Do we know - from the source data - whether a provenance event was a transfer of _legal_ ownership? Or is this unknown and do we only know that an object has been 'moved' to another agent?
 1. NMVW's data contains the names and roles of the persons involved in provenance events. For example: the curator that bought an object. Is it useful to register this? Or are only the organisations to which the persons belonged important? -> For now we'll register this information in the 'Description' attribute
 1. NMVW primarily registers the transfers of custody. That's because the museum is not the legal owner of objects - that's the Dutch government.

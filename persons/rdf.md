@@ -6,7 +6,7 @@ The model uses [Linked Art](https://linked.art/model/actor/) as foundation.
 
 Draft
 
-TODO: add properties 'sameAs', 'source' and 'description'
+TBD: add properties 'sameAs', 'source' and 'description'?
 
 ## Example
 

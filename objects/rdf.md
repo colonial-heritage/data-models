@@ -25,13 +25,13 @@ Draft
     a crm:E22_Human-Made_Object ;
 
     ####################
-    # Types. Note: currently not in the data of the data providers
+    # Types
     ####################
 
     crm:P2_has_type <http://vocab.getty.edu/aat/300033618> ; # Paintings
 
     ####################
-    # Materials. Note: currently these are blank nodes with rdfs:labels
+    # Materials
     ####################
 
     crm:P45_consists_of <http://vocab.getty.edu/aat/300015050> ; # Oil paint
@@ -67,13 +67,13 @@ Draft
     crm:P67i_is_referred_to_by <https://n2t.net/ark:/27023/13fcc150b326ff6dacdee7a3011ff60b> ;
 
     ####################
-    # Dimensions: width
+    # Dimensions: width. Note: currently not in use; the data providers provide unstructured data
     ####################
 
     crm:P43_has_dimension <https://n2t.net/ark:/27023/ff1f990a536656a4748e6864aa0b1d00> ;
 
     ####################
-    # Dimensions: height
+    # Dimensions: height. Note: currently not in use; the data providers provide unstructured data
     ####################
 
     crm:P43_has_dimension <https://n2t.net/ark:/27023/4dc66d66e8820c52a68c6b548b53219b> ;
