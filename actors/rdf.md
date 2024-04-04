@@ -1,4 +1,4 @@
-# Persons: RDF model
+# Actors: RDF model
 
 The model uses [Linked Art](https://linked.art/model/actor/) as foundation.
 
@@ -6,7 +6,9 @@ The model uses [Linked Art](https://linked.art/model/actor/) as foundation.
 
 Draft
 
-TBD: add properties 'sameAs', 'source' and 'description'?
+## TBD
+
+Add properties 'sameAs', 'source' and 'description'?
 
 ## Example
 
@@ -20,9 +22,9 @@ TBD: add properties 'sameAs', 'source' and 'description'?
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Original IRI of dataset: https://dataprovider.nl/dataset1
-# Original IRI of person: https://dataprovider.nl/person1
+# Original IRI of actor: https://dataprovider.nl/person1
 
-# MD5 of original IRI of person
+# MD5 of original IRI of actor
 <https://n2t.net/ark:/27023/37cd45dfd4d863a8509fcff5aed4fdc7>
     a crm:E21_Person ;
 
@@ -54,7 +56,7 @@ TBD: add properties 'sameAs', 'source' and 'description'?
 # Name
 ####################
 
-# MD5 of original IRI of person + 'name'
+# MD5 of original IRI of actor + 'name'
 <https://n2t.net/ark:/27023/bc19ea4349fb2a752d383acdc7b3ad1d>
     a crm:E33_E41_Linguistic_Appellation ;
     rdfs:label "John Doe" ;
@@ -67,7 +69,7 @@ TBD: add properties 'sameAs', 'source' and 'description'?
 # First name
 ####################
 
-# MD5 of original IRI of person + 'firstname'
+# MD5 of original IRI of actor + 'firstname'
 <https://n2t.net/ark:/27023/a701e6283687b85d1712f72dc574c674>
     a crm:E33_E41_Linguistic_Appellation ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300404651> ; # First name
@@ -77,7 +79,7 @@ TBD: add properties 'sameAs', 'source' and 'description'?
 # Last name
 ####################
 
-# MD5 of original IRI of person + 'lastname'
+# MD5 of original IRI of actor + 'lastname'
 <https://n2t.net/ark:/27023/4ae762de09e312f3fa26771676659514>
     a crm:E33_E41_Linguistic_Appellation ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300404652> ; # Last name
@@ -97,7 +99,7 @@ TBD: add properties 'sameAs', 'source' and 'description'?
 # Date of birth
 ####################
 
-# MD5 of original IRI of person + 'datebirth'
+# MD5 of original IRI of actor + 'datebirth'
 <https://n2t.net/ark:/27023/9c6cf905d3061b3734decf4372583d95>
     a crm:E52_Time-Span ;
     crm:P82a_begin_of_the_begin "1889-05"^^xsd:gYearMonth ;
@@ -107,7 +109,7 @@ TBD: add properties 'sameAs', 'source' and 'description'?
 # Place of birth (if not linked to GeoNames)
 ####################
 
-# MD5 of original IRI of person + 'placebirth'
+# MD5 of original IRI of actor + 'placebirth'
 <https://n2t.net/ark:/27023/926cae587514cfd9d018a7d8927ad763>
     a crm:E53_Place ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City (if known from the data)
@@ -117,7 +119,7 @@ TBD: add properties 'sameAs', 'source' and 'description'?
 # Name of place of birth
 ####################
 
-# MD5 of original IRI of person + 'placebirthname'
+# MD5 of original IRI of actor + 'placebirthname'
 <https://n2t.net/ark:/27023/1c1b9961929734fd4cd82639088b1675>
     a crm:E33_E41_Linguistic_Appellation ;
     rdfs:label "Amsterdam" ;
@@ -128,7 +130,7 @@ TBD: add properties 'sameAs', 'source' and 'description'?
 # Death
 ####################
 
-# MD5 of original IRI of person + 'death'
+# MD5 of original IRI of actor + 'death'
 <https://n2t.net/ark:/27023/ecc3b6cea79246cbb39425664c14adff>
     a crm:E69_Death ;
     crm:P4_has_time-span <https://n2t.net/ark:/27023/f6655931570be44a9fd264f33ed135a0> ;
@@ -138,7 +140,7 @@ TBD: add properties 'sameAs', 'source' and 'description'?
 # Date of death
 ####################
 
-# MD5 of original IRI of person + 'datedeath'
+# MD5 of original IRI of actor + 'datedeath'
 <https://n2t.net/ark:/27023/f6655931570be44a9fd264f33ed135a0>
     a crm:E52_Time-Span ;
     crm:P82a_begin_of_the_begin "1889-05"^^xsd:gYearMonth ;
@@ -148,7 +150,7 @@ TBD: add properties 'sameAs', 'source' and 'description'?
 # Place of death (if not linked to GeoNames)
 ####################
 
-# MD5 of original IRI of person + 'placedeath'
+# MD5 of original IRI of actor + 'placedeath'
 <https://n2t.net/ark:/27023/b6312be7015e62fb78dedac685cbaceb>
     a crm:E53_Place ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City (if known from the data)
@@ -158,7 +160,7 @@ TBD: add properties 'sameAs', 'source' and 'description'?
 # Name of place of death
 ####################
 
-# MD5 of original IRI of person + 'placedeathname'
+# MD5 of original IRI of actor + 'placedeathname'
 <https://n2t.net/ark:/27023/ba95f880264e35db39fbcd71dbb9a528>
     a crm:E33_E41_Linguistic_Appellation ;
     rdfs:label "The Hague" ;

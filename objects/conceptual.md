@@ -18,7 +18,7 @@ Draft
 |Name|0 or 1|Name or title of the object|`Fragment van een figuur`|
 |Description|0 or 1|Name of the object|`Staande figuur, mogelijk een figuur met dwerggroei voorstellend. Fragment afkomstig van kleine figurines uit graven.`|
 |Inscription or marking|0 or more|Inscription or marking on the object|-|
-|Creator/maker|0 or more|Reference to an actor (e.g. a person or group) who created the object|See [the model](../persons/conceptual.md)|
+|Creator/maker|0 or more|Reference to an actor (e.g. a person or group) who created the object|See [the model](../actors/conceptual.md)|
 |Date created|0 or more|Date when the object was made. Could be an exact date or a range|`1708-01-02`, `1708`, `1700-1800`|
 |Location of creation|0 or more|Location where the object was made. Could be a specific or generic place|`Jakarta`, `Indonesia`, `Asia`|
 |Material|0 or more|Material of the object|`Wood`|
@@ -26,7 +26,7 @@ Draft
 |Dimension|0 or 1|Width, height, depth of the object|-|
 |Digital object|0 or more|Reference to a digital object|-|
 |Transfer of ownership or custody|0 or more|Reference to a provenance event|See [the model](../provenance/conceptual.md)|
-|Part of dataset|1|Reference to the dataset to which the object belongs|-|
+|Part of dataset|1|Reference to the dataset to which the (information about the) object belongs|-|
 
 ### Digital Object
 
