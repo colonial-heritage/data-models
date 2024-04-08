@@ -21,7 +21,7 @@ Model for describing a cultural heritage object (CHO). The model uses the [Objec
 |Technique|0 or more|Identifier (from the Wereldmuseum Thesaurus) of the technique used when creating the object|`https://hdl.handle.net/20.500.11840/termmaster26171`|
 |Dimension|0 or 1|Width, height, depth of the object|-|
 |Digital object|0 or more|Identifier of a digital object|`https://example.org/image`|
-|Transfer of ownership or custody|0 or more|Identifier of a provenance event|See [the model](../provenance/conceptual.md)|
+|Transfer of ownership or custody|0 or more|Identifier of a provenance event|See [the model](../provenance-events/conceptual.md)|
 |Part of dataset|1|Identifier of the dataset to which the (information about the) object belongs|`https://example.org/dataset`|
 
 ### Digital Object

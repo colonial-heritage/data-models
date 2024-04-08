@@ -14,8 +14,8 @@ Model for describing a provenance event. The aim of the model is to track the ev
 |Qualifier|0 or 1|Identifier (from the AAT) of the qualifier of the classification|`http://vocab.getty.edu/aat/300435722`|
 |Name|0 or 1|Name of the event|`Acquisition of object from seller`, `Theft of object from owner`|
 |Description|0 or 1|Description of the event|-|
-|Transferred from|0 or 1|Identifier (from Wikidata or from an authority file of the data provider) of the actor who owned or held the object|`http://www.wikidata.org/entity/Q517`|
-|Transferred to|0 or 1|Identifier (from Wikidata or from an authority file of the data provider) of the actor who received the object|`http://www.wikidata.org/entity/Q171480`|
+|Transferred from|0 or 1|Identifier (from Wikidata or from an authority file of the data provider) of the actor who owned or held the object|See [the model](../actors/conceptual.md)|
+|Transferred to|0 or 1|Identifier (from Wikidata or from an authority file of the data provider) of the actor who received the object|See [the model](../actors/conceptual.md)|
 |Location|0 or 1|Identifier (from GeoNames) of the location of the event|`https://sws.geonames.org/1642911/`|
 |Date|0 or 1|Date of the event|`1887`, `1887-06-05`, `1887-1889`|
 |Source|0 or 1|Sources on which the provenance information is based, e.g. URLs of websites, book titles|`See webpage http://example.org/3`|
