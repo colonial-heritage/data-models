@@ -15,7 +15,7 @@ An enrichment in the form of a text, e.g. a comment about existing information o
 |Text direction|1|Direction of the text|`ltr`, `rtl`|
 |Format|1|Format code of the text, according to the IANA media types|`text/plain`|
 |Language|0 or 1|Language code of the text, according to ISO 639-1|`en-gb`|
-|Source|0 or more|Statement(s) about the source(s) the creator used when creating this enrichment, e.g. URLs of websites, book titles|`See webpage http://example.org/1`|
+|Source|0 or 1|Statement(s) about the source(s) the creator used when creating this enrichment, e.g. URLs of websites, book titles|`See webpage http://example.org/1`|
 |About|1|Identifier of the information the enrichment is about|`https://example.org/object#title`|
 |Creator|1|Identifier of the user who created the enrichment|`https://www.linkedin.com/in/person/`|
 |Date created|1|Date on which the enrichment was created, in UTC|`2023-08-10T12:17:28`|
