@@ -1,10 +1,6 @@
-# Provenance information: RDF model
+# Provenance events: RDF model
 
-The model is a translation of the [conceptual model](./conceptual.md) to RDF. The model uses [Linked Art](https://linked.art/model/provenance/) as foundation.
-
-## Status
-
-Draft
+RDF model for describing a provenance event. The model is a translation of the [conceptual model](./conceptual.md). The model uses [Linked Art](https://linked.art/model/provenance/) as foundation.
 
 ## Example
 

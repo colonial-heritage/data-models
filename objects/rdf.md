@@ -1,10 +1,6 @@
-# Cultural Heritage Objects: RDF model
+# Cultural heritage objects: RDF model
 
-The model uses [Linked Art](https://linked.art/model/object/) as foundation.
-
-## Status
-
-Draft
+RDF model for describing a cultural heritage object (CHO). The model is a translation of the [conceptual model](./conceptual.md). The model uses [Linked Art](https://linked.art/model/object/) as foundation.
 
 ## Example
 
@@ -28,13 +24,13 @@ Draft
     # Types
     ####################
 
-    crm:P2_has_type <http://vocab.getty.edu/aat/300033618> ; # Paintings
+    crm:P2_has_type <https://hdl.handle.net/20.500.11840/termmaster1397> ; # Photo
 
     ####################
     # Materials
     ####################
 
-    crm:P45_consists_of <http://vocab.getty.edu/aat/300015050> ; # Oil paint
+    crm:P45_consists_of <https://hdl.handle.net/20.500.11840/termmaster26637> ; # Wood
 
     ####################
     # Subjects. Note: currently not in the data of the data providers
@@ -193,10 +189,10 @@ Draft
 # MD5 of original IRI of object + 'production' + sequence number
 <https://n2t.net/ark:/27023/7978f044b5bab743788a9c05fc436ac6>
     a crm:E12_Production ;
-    crm:P32_used_general_technique <http://vocab.getty.edu/aat/300133274> ; # Albumen process
+    crm:P32_used_general_technique <https://hdl.handle.net/20.500.11840/termmaster26171> ; # Wood working
     crm:P14_carried_out_by <https://n2t.net/ark:/27023/17c8d9e5e5275425714135a56ef7cbbd> ;
     crm:P4_has_time-span <https://n2t.net/ark:/27023/9e381563cea95ccedf510a6dc6500636> ;
-    crm:P7_took_place_at <https://sws.geonames.org/3382998/> . # Suriname
+    crm:P7_took_place_at <https://sws.geonames.org/1642911/> . # Jakarta
 
 ####################
 # Right of digital object

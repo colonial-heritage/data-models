@@ -1,10 +1,6 @@
 # Actors: RDF model
 
-The model uses [Linked Art](https://linked.art/model/actor/) as foundation.
-
-## Status
-
-Draft
+RDF model for describing an actor. The model is a translation of the [conceptual model](./conceptual.md). The model uses [Linked Art](https://linked.art/model/actor/) as foundation.
 
 ## TBD
 
