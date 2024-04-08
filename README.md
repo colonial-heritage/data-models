@@ -13,5 +13,4 @@ This repository contains the data models used by Colonial Collections, e.g. in i
 1. Provenance events
     1. [Conceptual model](./provenance-events/conceptual.md)
     1. [RDF model](./provenance-events/rdf.md)
-1. User enrichments
-    1. [Conceptual model](./user-enrichments/conceptual.md)
+1. [User enrichments](./user-enrichments/README.md)
