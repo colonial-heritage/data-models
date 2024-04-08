@@ -1,6 +1,6 @@
 # Colonial Collections: data models
 
-This repository contains the data models used by Colonial Collections, e.g. in its [Knowledge Graph](https://data.colonialcollections.nl/data-hub/knowledge-graph).
+This repository contains the data models used by the Datahub of Colonial Collections, e.g. in its [Knowledge Graph](https://data.colonialcollections.nl/data-hub/knowledge-graph).
 
 ## Contents
 

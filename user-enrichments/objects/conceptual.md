@@ -29,7 +29,7 @@ An enrichment in the form of a new reference. A reference can be e.g. a term fro
 |-|-|-|-|
 |ID|1|Identifier of the enrichment|`https://example.org/enrichment-2`|
 |Value|1|Content of the enrichment: the identifier of the reference|`http://vocab.getty.edu/aat/300011176`|
-|Source|0 or more|Statement(s) about the source(s) the creator used when creating this enrichment, e.g. URLs of websites, book titles|`See webpage http://example.org/2`|
+|Source|0 or more|Statement(s) about the source(s) the creator used when creating this enrichment, e.g. URLs of websites or titles of books|`See webpage http://example.org/2`|
 |About|1|Identifier of the information the enrichment is about|`https://example.org/object#materials`|
 |Creator|1|Identifier of the user who created the enrichment|`https://www.linkedin.com/in/person/`|
 |Date created|1|Date on which the enrichment was created, in UTC|`2023-08-10T12:17:28`|
@@ -43,7 +43,7 @@ An enrichment in the form of a new date.
 |-|-|-|-|
 |ID|1|Identifier of the enrichment|`https://example.org/enrichment-3`|
 |Value|1|Content of the enrichment: a date according to [EDTF](https://www.loc.gov/standards/datetime/)|`1901`, `1901?`, `1900/1905`|
-|Source|0 or more|Statement(s) about the source(s) the creator used when creating this enrichment, e.g. URLs of websites, book titles|`See webpage http://example.org/3`|
+|Source|0 or more|Statement(s) about the source(s) the creator used when creating this enrichment, e.g. URLs of websites or titles of books|`See webpage http://example.org/3`|
 |About|1|Identifier of the information the enrichment is about|`https://example.org/object#date-created`|
 |Creator|1|Identifier of the user who created the enrichment|`https://www.linkedin.com/in/person/`|
 |Date created|1|Date on which the enrichment was created, in UTC|`2023-08-10T12:17:28`|

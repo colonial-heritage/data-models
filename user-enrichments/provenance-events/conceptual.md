@@ -18,7 +18,7 @@ Model for describing a provenance event contributed by a user.
 |Transferred to|0 or 1|Identifier (from Wikidata or from an authority file of the data provider) of the actor who received the object|See [the model](../actors/conceptual.md)|
 |Location|0 or 1|Identifier (from GeoNames) of the location of the event|`https://sws.geonames.org/1642911/`|
 |Date|0 or 1|Date of the event|`1887`, `1887-06-05`, `1887-1889`|
-|Source|0 or 1|Statement(s) about the source(s) the creator used when creating this enrichment, e.g. URLs of websites, book titles|`See webpage http://example.org/3`|
+|Source|0 or 1|Statement(s) about the source(s) the creator used when creating this enrichment, e.g. URLs of websites or titles of books|`See webpage http://example.org/3`|
 |About|1|Identifier of the object the enrichment is about|`https://example.org/object`|
 |Creator|1|Identifier (from e.g. LinkedIn, Facebook) of the user who created the enrichment|`https://www.linkedin.com/in/person/`|
 |Date created|1|Date on which the enrichment was created, in UTC|`2024-04-08T12:17:28`|
