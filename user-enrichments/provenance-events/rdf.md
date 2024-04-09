@@ -49,7 +49,7 @@ temp-nanopub-id:pubinfo {
     # if/when the user changes his or her profile settings in e.g. LinkedIn.
     # These triples capture the information as it was at the moment of creation of the nanopublication.
     <https://www.linkedin.com/in/person/>
-      rdfs:label "Name of person" .
+        rdfs:label "Name of person" .
 }
 ```
 
