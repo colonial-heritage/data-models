@@ -2,7 +2,7 @@
 
 RDF model for describing a provenance event. The model is a translation of the [conceptual model](./conceptual.md). The model uses [Linked Art](https://linked.art/model/provenance/) as foundation, using [attribute assignments](https://linked.art/model/assertion/) to associate additional information to the provenance event (e.g. the likelihood of the event).
 
-## Generic model
+## Generic model for publishing a nanopublication
 
 An implementation of the [Nanopublications model](https://nanopub.net/)
 
