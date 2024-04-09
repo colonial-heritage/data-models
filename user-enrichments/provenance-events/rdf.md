@@ -4,15 +4,16 @@ RDF model for describing a provenance event. The model is a translation of the [
 
 ## Generic model
 
+An implementation of the [Nanopublications model](https://nanopub.net/)
+
 ```trig
-@prefix cc: <https://data.colonialcollections.nl/schemas/nanopub#> .
+@prefix cc: <https://data.colonialcollections.nl/schemas/nanopub#> . # Does not resolve yet
 @prefix dcterms: <http://purl.org/dc/terms/license> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix temp-nanopub-id: <http://purl.org/nanopub/temp/temp-nanopub-id/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 temp-nanopub-id:Head {
     temp-nanopub-id:
@@ -48,7 +49,7 @@ temp-nanopub-id:pubinfo {
     # if/when the user changes his or her profile settings in e.g. LinkedIn.
     # These triples capture the information as it was at the moment of creation of the nanopublication.
     <https://www.linkedin.com/in/person/>
-      rdfs:label "Person" .
+      rdfs:label "Name of person" .
 }
 ```
 
