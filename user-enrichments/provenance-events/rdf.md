@@ -75,17 +75,22 @@ temp-nanopub-id:provenance {
 }
 
 temp-nanopub-id:pubinfo {
+    # Tool used for creating the nanopublication
     <https://app.colonialcollections.nl/>
         a npx:SoftwareTool ;
         rdfs:label "Colonial Collections" .
 
     temp-nanopub-id:
-        a cc:Nanopub, # Generic type
-          cc:ProvenanceEventVersion1 ; # Specific type
+        a cc:Nanopub, # Generic type, so that we can easily retrieve all nanopubs of Colonial Collections, regardless of their specific type
+          cc:ProvenanceEventVersion1 ; # Specific type, including a version number, so that we can distinguish between multiple versions of the specific type
         dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
         npx:wasCreatedWith <https://app.colonialcollections.nl/> ;
         npx:introduces <https://nanopublication.example/1> .
 
+    # Additional information about the actor who created the nanopublication.
+    # Be aware that both the IRI and the additional information of the actor can change,
+    # e.g. because the actor changes his or her profile settings in e.g. LinkedIn.
+    # These triples capture the information as it was at the moment of creation of the nanopublication.
     <https://www.linkedin.com/in/person/>
       rdfs:label "Person" .
 }
