@@ -6,7 +6,7 @@ RDF model for describing a provenance event. The model is a translation of the [
 
 An implementation of the [Nanopublications model](https://nanopub.net/)
 
-```trig
+```turtle
 @prefix cc: <https://data.colonialcollections.nl/schemas/nanopub#> . # Does not resolve yet
 @prefix dcterms: <http://purl.org/dc/terms/license> .
 @prefix np: <http://www.nanopub.org/nschema#> .
