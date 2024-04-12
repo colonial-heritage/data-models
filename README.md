@@ -7,6 +7,9 @@ This repository contains the data models used by the Datahub of Colonial Collect
 1. Actors
     1. [Conceptual model](./actors/conceptual.md)
     1. [RDF model](./actors/rdf.md)
+1. Communities
+    1. [Conceptual model](./communities/conceptual.md)
+    1. [RDF model](./communities/rdf.md)
 1. Cultural heritage objects
     1. [Conceptual model](./objects/conceptual.md)
     1. [RDF model](./objects/rdf.md)
