@@ -17,7 +17,7 @@ RDF model for describing a community. The model is a translation of the [concept
     ] ;
     crm:P1_is_identified_by [
         a crm:E42_Identifier ;
-        crm:P2_has_type <http://vocab.getty.edu/aat/300404621> ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404621> ; # Repository number
         crm:P190_has_symbolic_content "1234" # ID assigned by the data source
     ] .
 ```
