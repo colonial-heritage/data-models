@@ -21,5 +21,6 @@ Model for describing a provenance event contributed by a user.
 |Source|0 or 1|Statement(s) about the source(s) the creator used when creating this enrichment, e.g. URLs of websites or titles of books|`See webpage http://example.org/3`|
 |About|1|Identifier of the object the enrichment is about|`https://example.org/object`|
 |Creator|1|Identifier (from e.g. LinkedIn, Facebook) of the user who created the enrichment|`https://www.linkedin.com/in/person/`|
+|Community|1|Identifier of the community to which the user belongs|`https://example.org/community-1`|
 |Date created|1|Date on which the enrichment was created, in UTC|`2024-04-08T12:17:28`|
 |License|1|Identifier (from Creative Commons) of the license of the enrichment|`https://creativecommons.org/licenses/by/4.0/`|
