@@ -28,7 +28,21 @@ temp-nanopub-id:assertion {
 }
 
 temp-nanopub-id:provenance {
-    temp-nanopub-id:assertion prov:wasAttributedTo <https://www.linkedin.com/in/person/> .
+    temp-nanopub-id:assertion
+        prov:wasGeneratedBy :asserting-activity ;
+        prov:wasAttributedTo <https://n2t.net/ark:/27023/b062d006e928da1bfec6791bf75adf40> .
+
+    <https://n2t.net/ark:/27023/b062d006e928da1bfec6791bf75adf40>
+        prov:actedOnBehalfOf <https://n2t.net/ark:/27023/5eaead661201a601aa9b6b8109e13849> ;
+        rdfs:label "Name of person" ;
+        prov:qualifiedDelegation :delegation .
+
+    :delegation
+        prov:agent <https://n2t.net/ark:/27023/5eaead661201a601aa9b6b8109e13849> ;
+        prov:hadActivity :asserting-activity .
+
+    <https://n2t.net/ark:/27023/5eaead661201a601aa9b6b8109e13849>
+        rdfs:label "Name of community" .
 }
 
 temp-nanopub-id:pubinfo {
@@ -39,21 +53,10 @@ temp-nanopub-id:pubinfo {
 
     temp-nanopub-id:
         a cc:Nanopub, # Generic type, so that we can easily retrieve all nanopubs of Colonial Collections, regardless of their specific type
-          cc:ProvenanceEventVersion1 ; # Specific type, including a version number, so that we can distinguish between multiple versions of the specific type
+            cc:ProvenanceEventVersion1 ; # Specific type, including a version number, so that we can distinguish between multiple versions of the specific type
         dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
         npx:wasCreatedWith <https://app.colonialcollections.nl/> ;
         npx:introduces <https://nanopublication.example/1> . # Reference to the information contributed by a user (see the models underneath)
-
-    # Additional information about the user who created the nanopublication.
-    # Be aware that both the IRI and the additional information of the user can change,
-    # if/when the user changes his or her profile settings in e.g. LinkedIn.
-    # These triples capture the information as it was at the moment of creation of the nanopublication.
-    <https://www.linkedin.com/in/person/>
-        rdfs:label "Name of person" ;
-        dcterms:isPartOf <https://example.org/community-1> .
-
-    <https://example.org/community-1>
-        rdfs:label "Name of community" .
 }
 ```
 
