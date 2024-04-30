@@ -29,17 +29,17 @@ temp-nanopub-id:assertion {
 
 temp-nanopub-id:provenance {
     temp-nanopub-id:assertion
-        prov:wasGeneratedBy :asserting-activity ;
+        prov:wasGeneratedBy temp-nanopub-id:asserting-activity ;
         prov:wasAttributedTo <https://n2t.net/ark:/27023/b062d006e928da1bfec6791bf75adf40> .
 
     <https://n2t.net/ark:/27023/b062d006e928da1bfec6791bf75adf40>
         prov:actedOnBehalfOf <https://n2t.net/ark:/27023/5eaead661201a601aa9b6b8109e13849> ;
         rdfs:label "Name of person" ;
-        prov:qualifiedDelegation :delegation .
+        prov:qualifiedDelegation temp-nanopub-id:delegation .
 
-    :delegation
+    temp-nanopub-id:delegation
         prov:agent <https://n2t.net/ark:/27023/5eaead661201a601aa9b6b8109e13849> ;
-        prov:hadActivity :asserting-activity .
+        prov:hadActivity temp-nanopub-id:asserting-activity .
 
     <https://n2t.net/ark:/27023/5eaead661201a601aa9b6b8109e13849>
         rdfs:label "Name of community" .
