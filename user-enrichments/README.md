@@ -12,9 +12,10 @@ The Datahub of Colonial Collections enables users to add their own enrichments t
 
 ## Contents
 
+1. [Generic RDF model](./rdf.md)
 1. Cultural heritage objects
-    1. [Conceptual model](./objects/conceptual.md)
-    1. [RDF model](./objects/rdf.md)
+   1. [Conceptual model](./objects/conceptual.md)
+   1. [RDF model](./objects/rdf.md)
 1. Provenance events
-    1. [Conceptual model](./provenance-events/conceptual.md)
-    1. [RDF model](./provenance-events/rdf.md)
+   1. [Conceptual model](./provenance-events/conceptual.md)
+   1. [RDF model](./provenance-events/rdf.md)
