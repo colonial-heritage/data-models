@@ -48,7 +48,7 @@ Alternatively (per https://www.w3.org/TR/annotation-vocab/#hasscope):
         dc:language "en"
     ] ;
     oa:hasTarget [
-        oa:hasScope cc:name ; # Reference to the resource the enrichment is about, e.g. the name of the object
+        oa:hasScope cc:name ; # Reference to what the enrichment is about, e.g. the name of the object
         oa:hasSource <http://example.org/object> . # Reference to the object
     ] .
 ```
