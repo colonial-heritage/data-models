@@ -12,7 +12,7 @@ Example: a user has made an enrichment about the name/title a cultural heritage 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://nanopublication.example/1> # IRI for illustration only; will be a blank node in practice
+<https://nanopublication.example/1>
     a oa:Annotation ;
     oa:hasBody [
         a oa:TextualBody ;
@@ -21,11 +21,11 @@ Example: a user has made an enrichment about the name/title a cultural heritage 
         dc:format "text/plain" ;
         dc:language "en"
     ] ;
-    oa:hasTarget <http://example.org/object#name> . # Reference to the resource the enrichment is about, e.g. the name of the object
+    oa:hasTarget <https://example.org/object#name> . # Reference to the resource the enrichment is about, e.g. the name of the object
 
 <http://example.org/object#name>
     a oa:SpecificResource ;
-    oa:hasSource <http://example.org/object> . # Reference to the object
+    oa:hasSource <https://example.org/object> . # Reference to the object
 ```
 
 Alternatively (per https://www.w3.org/TR/annotation-vocab/#hasscope):
@@ -37,7 +37,7 @@ Alternatively (per https://www.w3.org/TR/annotation-vocab/#hasscope):
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://nanopublication.example/1> # IRI for illustration only; will be a blank node in practice
+<https://nanopublication.example/1>
     a oa:Annotation ;
     oa:hasBody [
         a oa:TextualBody ;
@@ -48,6 +48,6 @@ Alternatively (per https://www.w3.org/TR/annotation-vocab/#hasscope):
     ] ;
     oa:hasTarget [
         oa:hasScope cc:name ; # Reference to what the enrichment is about, e.g. the name of the object
-        oa:hasSource <http://example.org/object> . # Reference to the object
+        oa:hasSource <https://example.org/object> . # Reference to the object
     ] .
 ```

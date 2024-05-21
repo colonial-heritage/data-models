@@ -11,7 +11,7 @@ A cultural heritage object was acquired by an actor from another actor
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://nanopublication.example/1> # IRI for illustration only; will be a blank node in practice
+<https://nanopublication.example/1>
     a crm:E13_Attribute_Assignment ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300435722> ;
     crm:P177_assigned_property_of_type crm:P24i_changed_ownership_through ;
@@ -66,7 +66,7 @@ A cultural heritage object was transferred from an actor to another actor
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://nanopublication.example/1> # IRI for illustration only; will be a blank node in practice
+<https://nanopublication.example/1>
     a crm:E13_Attribute_Assignment ;
     crm:P177_assigned_property_of_type crm:P30i_custody_transferred_through ;
     # Encapsulate the information of the provenance event
