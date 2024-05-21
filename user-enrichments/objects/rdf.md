@@ -8,7 +8,6 @@ Example: a user has made an enrichment about the name/title a cultural heritage 
 
 ```turtle
 @prefix oa: <http://www.w3.org/ns/oa#> .
-@prefix cc: <https://data.colonialcollections.nl/schemas/nanopub#> . # Does not resolve yet
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -22,9 +21,9 @@ Example: a user has made an enrichment about the name/title a cultural heritage 
         dc:format "text/plain" ;
         dc:language "en"
     ] ;
-    oa:hasTarget cc:name . # Reference to the resource the enrichment is about, e.g. the name of the object
+    oa:hasTarget <http://example.org/object#name> . # Reference to the resource the enrichment is about, e.g. the name of the object
 
-cc:name
+<http://example.org/object#name>
     a oa:SpecificResource ;
     oa:hasSource <http://example.org/object> . # Reference to the object
 ```
