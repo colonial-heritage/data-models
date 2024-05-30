@@ -22,6 +22,8 @@ RDF model for describing research guides. This is a draft version.
 1. For simplicity, is it possible to add all questions and answers in this guide to one text field?
 1. 'RelatedAides': how to model these?
 
+### Example
+
 ```turtle
 @prefix schema: <https://schema.org/> .
 
@@ -46,6 +48,8 @@ RDF model for describing research guides. This is a draft version.
 ### To discuss
 
 1. How should we model (the distinction between) primary and secondary sources? For example using `schema:additionalType`?
+
+### Example
 
 ```turtle
 @prefix schema: <https://schema.org/> .
@@ -82,6 +86,8 @@ RDF model for describing research guides. This is a draft version.
 1. 'Name variations': how should we model this? These are variations of the name of the person, not the document
 1. 'Period of activity': how should we model this? For example, as `schema:Event`? Or can we include this information in the `schema:text`?
 1. 'Type of objects': how should we model this?
+
+### Example
 
 ```turtle
 @prefix schema: <https://schema.org/> .
