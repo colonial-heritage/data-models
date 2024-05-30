@@ -7,14 +7,18 @@ Design: https://xd.adobe.com/view/0b89f99f-6624-494c-b10e-55001de41bf8-5eda/scre
 
 ## To discuss
 
-1. Should we model a 'top level' guide, to make clear how the various tiers belong together? For example: they're all part of this top level?
 1. What is the meaning of the hierarchy/the tiers, also looking at the nature/type of the guides ('documents'/'publications')? For example: is a 'tier 3' guide a 'part of' a 'tier 2' guide?
+1. Should we model a 'top level' guide, to make clear how the various tiers belong together? For example: they're all part of this top level?
 1. How should we model the Dutch and English versions of a guide? For example: are these distinct documents (e.g. with their own IRIs)? Or these direct translations that can be combined into one document?
-1. How should we model (the distinction between) primary and secondary sources? For example using `schema:additionalType`?
+1. The IRIs in the source data (e.g. Wikidata, GeoNames, AAT) point to the human-readable pages, not to linked data resources. Intentionally?
 
 ## A 'tier 2' guide
 
 "The second tier of the hierarchy is made up of descriptions of broad topics, major actors and concepts in the colonial context, such as the Dutch colonial army". Example: https://github.com/colonial-heritage/research-guides-dev/blob/main/niveau2/English/MilitaryAndNavy_20240417.yml
+
+### To discuss
+
+1. How should we model (the distinction between) primary and secondary sources? For example using `schema:additionalType`?
 
 ```turtle
 @prefix schema: <https://schema.org/> .
