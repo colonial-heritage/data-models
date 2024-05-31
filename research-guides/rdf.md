@@ -107,7 +107,7 @@ Example: https://github.com/colonial-heritage/research-guides-dev/blob/main/nive
 
 "On the third level, there is additional information about specific entities, actors and concepts related to and active in the colonial context".
 
-Example: https://github.com/colonial-heritage/research-guides-dev/blob/main/niveau3/English/KunsthandelVanLier_20240507.yml
+Example: https://github.com/colonial-heritage/research-guides-dev/blob/main/niveau3/English/RCC_20240417.yml
 
 ### To discuss
 
