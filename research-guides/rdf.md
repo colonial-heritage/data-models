@@ -22,7 +22,6 @@ If required!
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Research Guides"@en, "Onderzoeksgidsen"@nl ;
-  schema:description "Introduction"@en, "Introductie"@nl ;
   schema:text "What are the Research Guides?"@en, "Wat zijn de onderzoeksgidsen?"@nl ;
   schema:encodingFormat "text/markdown" ;
   schema:hasPart <https://guides.example.org/level-1a>, <https://guides.example.org/level-1b>, <https://guides.example.org/level-1c> .
