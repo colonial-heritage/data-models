@@ -15,7 +15,7 @@ RDF model for describing research guides. This is a draft version.
 
 ### A 'top level' guide
 
-If required!
+A top level guide is a guide without `schema:isPartOf` predicate.
 
 ```turtle
 <https://guides.example.org/top-level>
