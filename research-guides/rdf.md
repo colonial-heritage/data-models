@@ -13,7 +13,7 @@ RDF model for describing research guides. This is a draft version.
 1. How should we model the Dutch and English versions of a guide? For example: are these distinct documents (e.g. with their own IRIs)? Or these direct translations that can be combined into one document?
 1. The IRIs in the source data (e.g. Wikidata, GeoNames, AAT) point to the human-readable pages, not to linked data resources. Intentionally?
 
-### A 'top level' guide
+## A 'top level' guide
 
 A top level guide is a guide without `schema:isPartOf` predicate.
 
