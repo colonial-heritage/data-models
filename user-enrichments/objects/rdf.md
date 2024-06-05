@@ -31,6 +31,22 @@ Example: a user has made an enrichment about the name/title a cultural heritage 
 Alternatively (per https://www.w3.org/TR/annotation-vocab/#hasscope):
 
 ```turtle
+@prefix cc: <https://data.colonialcollections.nl/schemas/nanopub#> . # Does not resolve yet
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cc:name a rdfs:Property ;
+    rdfs:label "The name of a cultural heritage object" .
+
+cc:description a rdfs:Property ;
+    rdfs:label "The description of a cultural heritage object" .
+
+cc:technique a rdfs:Property ;
+    rdfs:label "The technique used for creating a cultural heritage object" .
+
+# Other properties...
+```
+
+```turtle
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix cc: <https://data.colonialcollections.nl/schemas/nanopub#> . # Does not resolve yet
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -47,7 +63,7 @@ Alternatively (per https://www.w3.org/TR/annotation-vocab/#hasscope):
         dc:language "en"
     ] ;
     oa:hasTarget [
-        oa:hasScope cc:name ; # Reference to what the enrichment is about, e.g. the name of the object
-        oa:hasSource <https://example.org/object> . # Reference to the object
+        oa:hasScope cc:name ; # The scope or context in which the resource is used within the Annotation, e.g. an annotation about the name of a heritage object
+        oa:hasSource <https://example.org/object> # Reference to the object
     ] .
 ```
