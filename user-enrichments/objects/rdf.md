@@ -32,6 +32,8 @@ Example: a user has made an enrichment about the name/title a cultural heritage 
 
 ### Option 2 (per https://www.w3.org/TR/annotation-vocab/#hasscope):
 
+#### Snapshot from a Colonial Collections vocabulary
+
 ```turtle
 @prefix cc: <https://data.colonialcollections.nl/schemas/nanopub#> . # Does not resolve yet
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -47,6 +49,8 @@ cc:technique a rdfs:Property ;
 
 # Other properties...
 ```
+
+#### The annotation
 
 ```turtle
 @prefix oa: <http://www.w3.org/ns/oa#> .
