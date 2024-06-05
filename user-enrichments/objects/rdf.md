@@ -4,6 +4,8 @@ RDF model for describing an object enrichment. The model is a translation of the
 
 ## Enrichment about a certain property
 
+### Option 1
+
 Example: a user has made an enrichment about the name/title a cultural heritage object
 
 ```turtle
@@ -28,7 +30,7 @@ Example: a user has made an enrichment about the name/title a cultural heritage 
     oa:hasSource <https://example.org/object> . # Reference to the object
 ```
 
-Alternatively (per https://www.w3.org/TR/annotation-vocab/#hasscope):
+### Option 2 (per https://www.w3.org/TR/annotation-vocab/#hasscope):
 
 ```turtle
 @prefix cc: <https://data.colonialcollections.nl/schemas/nanopub#> . # Does not resolve yet
