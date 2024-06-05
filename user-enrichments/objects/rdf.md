@@ -30,7 +30,7 @@ Example: a user has made an enrichment about the name/title a cultural heritage 
     oa:hasSource <https://example.org/object> . # Reference to the object
 ```
 
-### Option 2 (per https://www.w3.org/TR/annotation-vocab/#hasscope):
+### Option 2
 
 #### Snapshot from a Colonial Collections vocabulary
 
