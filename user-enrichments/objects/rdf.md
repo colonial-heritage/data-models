@@ -50,7 +50,7 @@ cc:technique a rdfs:Property ;
 # Other properties...
 ```
 
-#### The annotation
+#### An annotation using the Colonial Collections vocabulary
 
 ```turtle
 @prefix oa: <http://www.w3.org/ns/oa#> .
