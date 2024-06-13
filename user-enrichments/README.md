@@ -16,6 +16,8 @@ The Datahub of Colonial Collections enables users to add their own enrichments t
 1. Cultural heritage objects
    1. [Conceptual model](./objects/conceptual.md)
    1. [RDF model](./objects/rdf.md)
+1. Local Contexts Notices
+   1. [RDF model](./local-contexts-notices/rdf.md)
 1. Provenance events
    1. [Conceptual model](./provenance-events/conceptual.md)
    1. [RDF model](./provenance-events/rdf.md)
