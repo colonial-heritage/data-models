@@ -107,3 +107,136 @@ A cultural heritage object was transferred from an actor to another actor
 <https://sws.geonames.org/2643743/>
     rdfs:label "London" .
 ```
+
+## Querying enrichments
+
+Endpoint: https://virtuoso.nps.knowledgepixels.com/sparql
+
+```sparql
+PREFIX cc: <https://n2t.net/ark:/27023/9819f32405815dc7f2e0ecd9d8a9e604#>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX np: <http://www.nanopub.org/nschema#>
+PREFIX npa: <http://purl.org/nanopub/admin/>
+PREFIX npx: <http://purl.org/nanopub/x/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?dateCreated
+  ?license
+  ?creator ?creatorName
+  ?group ?groupName
+  ?qualifier ?qualifierName
+  ?source
+  ?type
+  ?transferredTitleFrom ?transferredTitleFromName
+  ?transferredTitleTo ?transferredTitleToName
+  ?additionalType ?additionalTypeName
+  ?location ?locationName
+  ?beginOfTheBegin ?endOfTheEnd
+  ?description
+  ?language
+  ?citation
+WHERE {
+  graph npa:graph {
+    ?np npa:hasHeadGraph ?head ;
+      dcterms:created ?dateCreated .
+  }
+
+  graph ?head {
+    ?np np:hasProvenance ?provenance ;
+      np:hasPublicationInfo ?pubInfo ;
+      np:hasAssertion ?assertion .
+  }
+
+  graph ?pubInfo {
+    ?np a cc:Nanopub ;
+      npx:introduces ?attributeAssignment ;
+      dcterms:license ?license .
+  }
+
+  graph ?provenance {
+    ?assertion prov:wasAttributedTo ?creator .
+    ?creator rdfs:label ?creatorName .
+
+    OPTIONAL {
+      ?creator prov:qualifiedDelegation [
+        prov:agent ?group
+      ] .
+      ?group rdfs:label ?groupName
+    }
+  }
+
+  graph ?assertion {
+    ?attributeAssignment crm:P141_assigned ?provenanceEvent .
+
+    OPTIONAL {
+      ?attributeAssignment crm:P2_has_type ?qualifier .
+      ?qualifier rdfs:label ?qualifierName .
+    }
+
+    {
+      ?provenanceEvent a ?type ;
+        crm:P24_transferred_title_of ?source .
+
+      OPTIONAL {
+        ?provenanceEvent crm:P23_transferred_title_from ?transferredTitleFrom .
+        ?transferredTitleFrom rdfs:label ?transferredTitleFromName .
+      }
+
+      OPTIONAL {
+        ?provenanceEvent crm:P22_transferred_title_to ?transferredTitleTo .
+        ?transferredTitleTo rdfs:label ?transferredTitleToName .
+      }
+    }
+    UNION
+    {
+      ?provenanceEvent a ?type ;
+        crm:P30_transferred_custody_of ?source .
+
+      OPTIONAL {
+        ?provenanceEvent crm:P28_custody_surrendered_by ?transferredTitleFrom .
+        ?transferredTitleFrom rdfs:label ?transferredTitleFromName .
+      }
+
+      OPTIONAL {
+        ?provenanceEvent crm:P29_custody_received_by ?transferredTitleTo .
+        ?transferredTitleTo rdfs:label ?transferredTitleToName .
+      }
+    }
+
+    OPTIONAL {
+      ?provenanceEvent crm:P2_has_type ?additionalType .
+      ?additionalType rdfs:label ?additionalTypeName .
+    }
+
+    OPTIONAL {
+      ?provenanceEvent crm:P7_took_place_at ?location .
+      ?location rdfs:label ?locationName .
+    }
+
+    OPTIONAL {
+      ?provenanceEvent crm:P4_has_time-span ?timeSpan .
+      ?timeSpan crm:P82a_begin_of_the_begin ?beginOfTheBegin ;
+        crm:P82b_end_of_the_end ?endOfTheEnd .
+    }
+
+    OPTIONAL {
+      ?provenanceEvent crm:P67i_is_referred_to_by [
+        crm:P2_has_type <http://vocab.getty.edu/aat/300444174> ; # Provenance statement
+        crm:P190_has_symbolic_content ?description ;
+      ] .
+
+      BIND(LANG(?description) AS ?language)
+    }
+
+    OPTIONAL {
+      ?provenanceEvent crm:P67i_is_referred_to_by [
+        crm:P2_has_type <http://vocab.getty.edu/aat/300435423> ; # Citation
+        crm:P190_has_symbolic_content ?citation ;
+      ] .
+    }
+  }
+}
+ORDER BY DESC(?dateCreated)
+```
